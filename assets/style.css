@@ -117,3 +117,33 @@
 @media(max-width:1100px){.home-page .home-hero{min-height:650px}.home-page .hero-art{min-height:500px}.home-page .browser-content{min-height:350px}.home-page .mock-image{height:210px}.home-page .grid{grid-template-columns:repeat(3,minmax(0,1fr))}.home-page .card-visual{height:200px}}
 @media(max-width:760px){.home-page .home-hero{min-height:0;padding-top:60px}.home-page .hero-art{min-height:430px;transform:none}.home-page .browser-content{min-height:300px}.home-page .mock-image{height:175px}.home-page .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.home-page .card-visual{height:160px}.home-page .trust-strip{margin-bottom:75px}}
 @media(max-width:480px){.home-page .home-hero h1{font-size:clamp(49px,12vw,59px);letter-spacing:-3.5px}.home-page .hero-art{min-height:315px}.home-page .browser-content{min-height:250px}.home-page .mock-image{height:145px}.home-page .grid{gap:10px}.home-page .card-visual{height:130px}.home-page .project-card h2{font-size:15px}.home-page .project-card p{font-size:9px}.home-page .visual-label{font-size:6px}.home-page .section-heading h2{font-size:36px}}
+
+
+/* === ANIMACIONES VISIBLES: corrección adicional === */
+.home-page .ambient-one{animation:ambientDrift 12s ease-in-out infinite alternate}
+.home-page .ambient-two{animation:ambientDrift 15s ease-in-out infinite alternate-reverse}
+.home-page .home-hero .eyebrow{animation:fadeSlideIn .8s both}
+.home-page .home-hero h1{animation:fadeSlideIn .95s .12s both}
+.home-page .hero-copy>.lead{animation:fadeSlideIn .9s .24s both}
+.home-page .hero-actions{animation:fadeSlideIn .9s .35s both}
+.home-page .hero-proof{animation:fadeSlideIn .9s .48s both}
+.home-page .card-visual{animation:visualBreathe 7s ease-in-out infinite;animation-delay:calc(var(--delay,0ms) * -1)}
+.home-page .project-card:nth-child(3n) .card-visual{animation-delay:-2s}
+.home-page .project-card:nth-child(3n + 1) .card-visual{animation-delay:-4s}
+.home-page .project-card{transform-style:preserve-3d}
+.home-page .project-card:before{display:block;content:"";position:absolute;inset:0;width:auto;height:auto;right:auto;bottom:auto;z-index:3;pointer-events:none;opacity:0;filter:none;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(181,255,208,.16),transparent 55%);transition:opacity .3s}
+.home-page .project-card:hover:before{opacity:1}
+.home-page .card-visual:after{content:"";position:absolute;inset:-40% -70%;z-index:1;pointer-events:none;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.19) 50%,transparent 58%);transform:translateX(-65%) rotate(8deg);animation:photoShine 8s ease-in-out infinite}
+.home-page .project-card:nth-child(2n) .card-visual:after{animation-delay:-4s}
+.home-page .browser-window{animation:browserFloat 6s ease-in-out infinite, edgeGlow 4s ease-in-out infinite}
+.home-page .art-spark{animation:spinSlow 12s linear infinite, sparkPulse 3s ease-in-out infinite alternate}
+.home-page .float-chip{animation:chipFloat 4s ease-in-out infinite}
+.home-page .primary-action{animation:buttonGlow 3.5s ease-in-out infinite}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ambientDrift{from{transform:translate3d(-20px,-12px,0) scale(.9)}to{transform:translate3d(45px,30px,0) scale(1.18)}}
+@keyframes visualBreathe{0%,100%{background-position:center,center;background-size:cover,cover}50%{background-position:center,52%;}}
+@keyframes photoShine{0%,35%{transform:translateX(-75%) rotate(8deg)}70%,100%{transform:translateX(75%) rotate(8deg)}}
+@keyframes edgeGlow{0%,100%{box-shadow:0 45px 130px rgba(0,0,0,.55),0 0 0 1px rgba(182,255,209,.07),0 0 45px rgba(99,255,165,.08)}50%{box-shadow:0 45px 130px rgba(0,0,0,.55),0 0 0 1px rgba(182,255,209,.15),0 0 75px rgba(99,255,165,.2)}}
+@keyframes sparkPulse{from{opacity:.45}to{opacity:1}}
+@keyframes buttonGlow{0%,100%{box-shadow:0 8px 30px rgba(115,255,176,.13)}50%{box-shadow:0 8px 38px rgba(115,255,176,.28)}}
+@media(prefers-reduced-motion:reduce){.home-page .ambient-one,.home-page .ambient-two,.home-page .home-hero .eyebrow,.home-page .home-hero h1,.home-page .hero-copy>.lead,.home-page .hero-actions,.home-page .hero-proof,.home-page .card-visual,.home-page .card-visual:after,.home-page .browser-window,.home-page .art-spark,.home-page .float-chip,.home-page .primary-action{animation:none!important}}
