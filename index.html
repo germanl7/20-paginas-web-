@@ -3,23 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>20 páginas web independientes</title>
+<meta name="theme-color" content="#07100d">
+<meta name="description" content="Explora una colección de 20 páginas web independientes, modernas y diseñadas con creatividad.">
+<title>20 WEB — Colección de páginas creativas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="home-page">
 <div class="bg"></div>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
 <header class="top">
-  <a class="brand" href="index.html">20<span>WEB</span></a>
-  <nav><a href="pagina-1.html">Página 1</a><a href="pagina-20.html">Página 20</a></nav>
+  <a class="brand" href="index.html" aria-label="20 WEB, inicio">20<span>WEB</span><i class="brand-dot"></i></a>
+  <nav aria-label="Navegación principal"><a href="#coleccion">Colección</a><a href="#sobre">Sobre el proyecto</a><a class="nav-cta" href="#coleccion">Explorar páginas <span>↗</span></a></nav>
 </header>
-<main class="hero">
-  <p class="eyebrow">COLECCIÓN DIGITAL · 2026</p>
-  <h1>20 páginas web<br><span>una por una.</span></h1>
-  <p class="lead">Cada proyecto está en su propio archivo HTML. Al abrir una página, solamente aparece ese diseño.</p>
+<main>
+  <section class="home-hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="live-dot"></span> COLECCIÓN DIGITAL · 2026</p>
+      <h1>Ideas que se<br>convierten en <span class="gradient-text">webs.</span></h1>
+      <p class="lead">Veinte diseños diferentes. Un montón de ideas. Explora la colección y abre cada proyecto por separado, sin mezclar las páginas.</p>
+      <div class="hero-actions"><a class="primary-action" href="#coleccion">Explorar colección <span>↗</span></a><a class="secondary-action" href="#sobre"><span class="play-icon">▶</span> Conocer el proyecto</a></div>
+      <div class="hero-proof"><div class="proof-avatars"><span>W</span><span>✦</span><span>20</span></div><p><strong>20 proyectos independientes</strong><br><small>Diseños listos para explorar</small></p></div>
+    </div>
+    <div class="hero-art reveal" aria-label="Vista gráfica de diseños web">
+      <div class="art-glow"></div>
+      <div class="browser-window">
+        <div class="browser-bar"><div class="browser-dots"><i></i><i></i><i></i></div><span>mi-proximo-proyecto.web</span><b>↗</b></div>
+        <div class="browser-content">
+          <div class="mock-nav"><span class="mock-logo">STUDIO<span>.</span></span><div><i></i><i></i><i></i></div></div>
+          <div class="mock-layout"><div class="mock-copy"><small>DISEÑO · CREATIVIDAD</small><h2>Hazlo<br><em>extraordinario.</em></h2><p>Una idea puede cambiarlo todo.</p><span class="mock-button">DESCUBRIR ↗</span></div><div class="mock-image"><div class="mock-sun"></div><div class="mock-orb"></div><div class="mock-lines"></div></div></div>
+          <div class="mock-bottom"><span>✳ EXPERIENCIAS DIGITALES</span><span>01 — 20</span></div>
+        </div>
+      </div>
+      <div class="float-chip chip-top"><span>✦</span> Diseño creativo</div><div class="float-chip chip-bottom"><span class="chip-check">✓</span> 20 páginas separadas</div>
+      <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+    </div>
+  </section>
+  <section class="trust-strip" aria-label="Características de la colección"><div><b>20</b><span>Proyectos</span></div><i></i><div><b>100%</b><span>Independientes</span></div><i></i><div><b>∞</b><span>Ideas por explorar</span></div><i></i><div class="trust-note"><span class="live-dot"></span> Hecho para descubrir</div></section>
+  <section class="collection-section" id="coleccion">
+    <div class="section-heading reveal"><div><p class="eyebrow">TU PRÓXIMA INSPIRACIÓN</p><h2>Explora la <span class="gradient-text">colección.</span></h2><p class="section-description">Cada tarjeta abre su propia página. Elige una y mira lo que hay dentro.</p></div><div class="collection-count"><strong>20</strong><span>DISEÑOS<br>PARA EXPLORAR</span></div></div>
+    <div class="filter-row reveal"><span class="filter-active"><span>✦</span> Todos los proyectos</span><span class="filter-hint">ESCOGE TU FAVORITO <span>↓</span></span></div>
+    <div class="grid" id="paginas">
+      <a class="card project-card card-restaurant" href="pagina-1.html"><div class="card-visual visual-restaurant"><span class="visual-label">FOOD & CULTURE</span><div class="visual-word">SABOR<span>DEL PACÍFICO</span></div><span class="visual-symbol">✳</span></div><div class="card-meta"><small>01 / RESTAURANTE</small><span>↗</span></div><h2>Restaurante Pacífico</h2><p>Sabores, cultura y tradición.</p></a>
+      <a class="card project-card card-music" href="pagina-2.html"><div class="card-visual visual-music"><span class="visual-label">MUSIC EXPERIENCE</span><div class="music-disc"><span>YESS<br>DJ</span></div><span class="music-wave"></span></div><div class="card-meta"><small>02 / MÚSICA</small><span>↗</span></div><h2>YESS DJ</h2><p>Ritmo, energía y sonido.</p></a>
+      <a class="card project-card card-fitness" href="pagina-3.html"><div class="card-visual visual-fitness"><span class="visual-label">MOVE YOUR LIMITS</span><div class="fitness-word">PUSH<br><em>FORWARD.</em></div><span class="fitness-ring"></span></div><div class="card-meta"><small>03 / FITNESS</small><span>↗</span></div><h2>Fitness Pro</h2><p>Entrena con toda la actitud.</p></a>
+      <a class="card project-card card-photo" href="pagina-4.html"><div class="card-visual visual-photo"><span class="visual-label">VISUAL STORIES</span><div class="photo-shape"></div><div class="photo-word">Luz<span>·</span></div></div><div class="card-meta"><small>04 / FOTOGRAFÍA</small><span>↗</span></div><h2>Fotografía Luz</h2><p>Historias capturadas en imágenes.</p></a>
+      <a class="card project-card" href="pagina-5.html"><div class="card-visual visual-courses"><span class="visual-label">LEARN SOMETHING NEW</span><div class="course-stack"><i>✳</i><i>⌘</i><i>↗</i></div><div class="simple-visual-title">APRENDE<br><em>A TU RITMO.</em></div></div><div class="card-meta"><small>05 / EDUCACIÓN</small><span>↗</span></div><h2>Cursos Online</h2><p>Aprende nuevas habilidades.</p></a>
+      <a class="card project-card" href="pagina-6.html"><div class="card-visual visual-property"><span class="visual-label">SPACES TO LIVE</span><div class="building-shape"></div><div class="property-word">NOVA<span>REAL ESTATE</span></div></div><div class="card-meta"><small>06 / INMOBILIARIA</small><span>↗</span></div><h2>Inmobiliaria Nova</h2><p>Encuentra tu próximo espacio.</p></a>
+      <a class="card project-card" href="pagina-7.html"><div class="card-visual visual-news"><span class="visual-label">LO QUE PASA HOY</span><div class="news-headline">CHOCÓ<br><em>AL DÍA.</em></div><div class="news-bar">INFORMACIÓN · COMUNIDAD · ACTUALIDAD</div></div><div class="card-meta"><small>07 / NOTICIAS</small><span>↗</span></div><h2>Noticias Chocó</h2><p>Actualidad y noticias de la región.</p></a>
+      <a class="card project-card" href="pagina-8.html"><div class="card-visual visual-roots"><span class="visual-label">IDENTIDAD · MEMORIA</span><div class="roots-symbol">✺</div><div class="roots-word">RAÍCES<br><em>DEL CHOCÓ</em></div></div><div class="card-meta"><small>08 / CULTURA</small><span>↗</span></div><h2>Raíces del Chocó</h2><p>Cultura, historia y tradición.</p></a>
+      <a class="card project-card" href="pagina-9.html"><div class="card-visual visual-services"><span class="visual-label">WE MAKE IT SIMPLE</span><div class="services-icon">✳</div><div class="simple-visual-title">TODO<br><em>RESUELTO.</em></div></div><div class="card-meta"><small>09 / SERVICIOS</small><span>↗</span></div><h2>Servicios Pro</h2><p>Soluciones para tu día a día.</p></a>
+      <a class="card project-card" href="pagina-10.html"><div class="card-visual visual-clean"><span class="visual-label">FRESH SPACE, FRESH MIND</span><div class="clean-bubble">✧</div><div class="clean-word">PURE<br><em>SPACE.</em></div></div><div class="card-meta"><small>10 / LIMPIEZA</small><span>↗</span></div><h2>Limpieza Elite</h2><p>Espacios limpios, sensación fresca.</p></a>
+      <a class="card project-card" href="pagina-11.html"><div class="card-visual visual-auto"><span class="visual-label">BUILT FOR THE ROAD</span><div class="auto-wheel">◉</div><div class="auto-word">AUTO<span>LAB</span></div></div><div class="card-meta"><small>11 / AUTOMOTOR</small><span>↗</span></div><h2>Taller Auto</h2><p>Cuidado y potencia para tu vehículo.</p></a>
+      <a class="card project-card" href="pagina-12.html"><div class="card-visual visual-fashion"><span class="visual-label">OWN YOUR STYLE</span><div class="fashion-word">URBAN<br><em>FORM.</em></div><div class="fashion-star">✳</div></div><div class="card-meta"><small>12 / MODA</small><span>↗</span></div><h2>Moda Urbana</h2><p>Estilo para expresarte a tu manera.</p></a>
+      <a class="card project-card" href="pagina-13.html"><div class="card-visual visual-coffee"><span class="visual-label">SLOW MORNINGS</span><div class="coffee-cup"><span>CA</span></div><div class="coffee-word">Café<br><em>Aurora.</em></div></div><div class="card-meta"><small>13 / CAFÉ</small><span>↗</span></div><h2>Café Aurora</h2><p>Una pausa con buen aroma.</p></a>
+      <a class="card project-card" href="pagina-14.html"><div class="card-visual visual-tech"><span class="visual-label">FUTURE, BUILT TODAY</span><div class="tech-orbit"></div><div class="tech-word">TECH<span>LAB_</span></div></div><div class="card-meta"><small>14 / TECNOLOGÍA</small><span>↗</span></div><h2>TechLab</h2><p>Ideas tecnológicas para el futuro.</p></a>
+      <a class="card project-card" href="pagina-15.html"><div class="card-visual visual-travel"><span class="visual-label">FIND YOUR ELSEWHERE</span><div class="travel-sun"></div><div class="travel-word">GO<br><em>BEYOND.</em></div></div><div class="card-meta"><small>15 / VIAJES</small><span>↗</span></div><h2>Viajes Tropicales</h2><p>Descubre nuevos destinos.</p></a>
+      <a class="card project-card" href="pagina-16.html"><div class="card-visual visual-game"><span class="visual-label">READY PLAYER ONE</span><div class="game-cross">＋</div><div class="game-word">GAME<br><em>ARENA.</em></div><span class="game-cube">◆</span></div><div class="card-meta"><small>16 / GAMING</small><span>↗</span></div><h2>Game Arena</h2><p>Un espacio para los gamers.</p></a>
+      <a class="card project-card" href="pagina-17.html"><div class="card-visual visual-edu"><span class="visual-label">KNOWLEDGE IS POWER</span><div class="edu-symbol">✳</div><div class="edu-word">EDUCA<br><em>PLUS.</em></div></div><div class="card-meta"><small>17 / EDUCACIÓN</small><span>↗</span></div><h2>Educa Plus</h2><p>Aprender puede ser increíble.</p></a>
+      <a class="card project-card" href="pagina-18.html"><div class="card-visual visual-events"><span class="visual-label">MAKE IT A MOMENT</span><div class="event-star">✦</div><div class="event-word">VIBE<br><em>TOGETHER.</em></div></div><div class="card-meta"><small>18 / EVENTOS</small><span>↗</span></div><h2>Eventos Vibe</h2><p>Momentos que merecen celebrarse.</p></a>
+      <a class="card project-card" href="pagina-19.html"><div class="card-visual visual-eco"><span class="visual-label">GROW WITH NATURE</span><div class="eco-leaf">❋</div><div class="eco-word">ECO<br><em>NATURA.</em></div></div><div class="card-meta"><small>19 / NATURALEZA</small><span>↗</span></div><h2>Eco Natura</h2><p>Ideas para un mundo más verde.</p></a>
+      <a class="card project-card" href="pagina-20.html"><div class="card-visual visual-architecture"><span class="visual-label">FORM FOLLOWS FEELING</span><div class="arch-lines"></div><div class="arch-word">NOVA<br><em>ARCH.</em></div></div><div class="card-meta"><small>20 / ARQUITECTURA</small><span>↗</span></div><h2>Arquitectura Nova</h2><p>Espacios con diseño y propósito.</p></a>
+    </div>
+  </section>
+  <section class="about-section" id="sobre"><div class="about-panel reveal"><div class="about-icon">✳</div><div><p class="eyebrow">UNA COLECCIÓN, VEINTE EXPERIENCIAS</p><h2>Una página para cada idea.</h2><p>Esta portada es el punto de partida. Los 20 proyectos siguen separados, cada uno con su propio diseño y contenido. Explora sin perderte.</p></div><a class="primary-action" href="#coleccion">Vamos allá <span>↑</span></a></div></section>
 </main>
-<section class="grid" id="paginas">
-  <a class="card" href="pagina-1.html"><small>01</small><h2>Restaurante Pacífico</h2><p>Abrir página 1 →</p></a><a class="card" href="pagina-2.html"><small>02</small><h2>YESS DJ</h2><p>Abrir página 2 →</p></a><a class="card" href="pagina-3.html"><small>03</small><h2>Fitness Pro</h2><p>Abrir página 3 →</p></a><a class="card" href="pagina-4.html"><small>04</small><h2>Fotografía Luz</h2><p>Abrir página 4 →</p></a><a class="card" href="pagina-5.html"><small>05</small><h2>Cursos Online</h2><p>Abrir página 5 →</p></a><a class="card" href="pagina-6.html"><small>06</small><h2>Inmobiliaria Nova</h2><p>Abrir página 6 →</p></a><a class="card" href="pagina-7.html"><small>07</small><h2>Noticias Chocó</h2><p>Abrir página 7 →</p></a><a class="card" href="pagina-8.html"><small>08</small><h2>Raíces del Chocó</h2><p>Abrir página 8 →</p></a><a class="card" href="pagina-9.html"><small>09</small><h2>Servicios Pro</h2><p>Abrir página 9 →</p></a><a class="card" href="pagina-10.html"><small>10</small><h2>Limpieza Elite</h2><p>Abrir página 10 →</p></a><a class="card" href="pagina-11.html"><small>11</small><h2>Taller Auto</h2><p>Abrir página 11 →</p></a><a class="card" href="pagina-12.html"><small>12</small><h2>Moda Urbana</h2><p>Abrir página 12 →</p></a><a class="card" href="pagina-13.html"><small>13</small><h2>Café Aurora</h2><p>Abrir página 13 →</p></a><a class="card" href="pagina-14.html"><small>14</small><h2>TechLab</h2><p>Abrir página 14 →</p></a><a class="card" href="pagina-15.html"><small>15</small><h2>Viajes Tropicales</h2><p>Abrir página 15 →</p></a><a class="card" href="pagina-16.html"><small>16</small><h2>Game Arena</h2><p>Abrir página 16 →</p></a><a class="card" href="pagina-17.html"><small>17</small><h2>Educa Plus</h2><p>Abrir página 17 →</p></a><a class="card" href="pagina-18.html"><small>18</small><h2>Eventos Vibe</h2><p>Abrir página 18 →</p></a><a class="card" href="pagina-19.html"><small>19</small><h2>Eco Natura</h2><p>Abrir página 19 →</p></a><a class="card" href="pagina-20.html"><small>20</small><h2>Arquitectura Nova</h2><p>Abrir página 20 →</p></a>
-</section>
-<footer>20 WEB · 20 proyectos independientes · GitHub Pages</footer>
+<footer class="home-footer"><a class="brand" href="index.html">20<span>WEB</span></a><span>20 proyectos independientes · Hecho con creatividad <b>✳</b></span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Volver arriba ↑</a></footer>
+<script src="assets/script.js"></script>
 </body>
 </html>
