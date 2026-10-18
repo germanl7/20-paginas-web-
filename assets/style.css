@@ -147,3 +147,32 @@
 @keyframes sparkPulse{from{opacity:.45}to{opacity:1}}
 @keyframes buttonGlow{0%,100%{box-shadow:0 8px 30px rgba(115,255,176,.13)}50%{box-shadow:0 8px 38px rgba(115,255,176,.28)}}
 @media(prefers-reduced-motion:reduce){.home-page .ambient-one,.home-page .ambient-two,.home-page .home-hero .eyebrow,.home-page .home-hero h1,.home-page .hero-copy>.lead,.home-page .hero-actions,.home-page .hero-proof,.home-page .card-visual,.home-page .card-visual:after,.home-page .browser-window,.home-page .art-spark,.home-page .float-chip,.home-page .primary-action{animation:none!important}}
+
+
+/* === ANIMACIONES FÁCILES DE NOTAR: brillo continuo y movimiento === */
+.home-page .home-hero h1 .gradient-text{animation:headlineGlow 2.2s ease-in-out infinite alternate}
+.home-page .hero-art{animation:heroDrift 5s ease-in-out infinite}
+.home-page .art-glow{animation:glowBreathe 3.2s ease-in-out infinite}
+.home-page .project-card{animation:cardLift 4.8s ease-in-out infinite;animation-delay:calc((var(--card-index, 0) % 4) * -0.7s)}
+.home-page .project-card:nth-child(4n + 1){animation-delay:-.2s}
+.home-page .project-card:nth-child(4n + 2){animation-delay:-1.3s}
+.home-page .project-card:nth-child(4n + 3){animation-delay:-2.4s}
+.home-page .project-card:nth-child(4n){animation-delay:-3.5s}
+.home-page .project-card:hover{animation-play-state:paused;transform:translateY(-12px) scale(1.025)}
+.home-page .project-card .card-visual{animation:visualZoom 8s ease-in-out infinite alternate}
+.home-page .project-card:nth-child(even) .card-visual{animation-delay:-4s}
+.home-page .project-card:hover .card-visual{animation-play-state:paused}
+.home-page .project-card:after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(120deg,rgba(168,255,206,.0),rgba(168,255,206,.65),rgba(199,255,134,.0),rgba(168,255,206,.0));background-size:300% 300%;animation:borderFlow 5s linear infinite;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;opacity:.65}
+.home-page .project-card:hover:after{opacity:1}
+.home-page .browser-window{animation:browserFloat 4s ease-in-out infinite, edgeGlow 2.5s ease-in-out infinite}
+.home-page .float-chip{animation:chipFloat 2.8s ease-in-out infinite}
+.home-page .spark-one{animation:spinSlow 8s linear infinite,sparkPulse 1.8s ease-in-out infinite alternate}
+.home-page .spark-two{animation:spinSlow 10s linear infinite reverse,sparkPulse 2.1s ease-in-out infinite alternate}
+.home-page .filter-active span{display:inline-block;animation:spinSlow 5s linear infinite}
+@keyframes headlineGlow{from{filter:drop-shadow(0 0 2px rgba(135,255,184,.12))}to{filter:drop-shadow(0 0 22px rgba(135,255,184,.6))}}
+@keyframes heroDrift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(.4deg)}}
+@keyframes cardLift{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes visualZoom{from{background-size:100% auto}to{background-size:112% auto}}
+@keyframes borderFlow{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+@media(max-width:760px){.home-page .project-card{animation:cardLift 5.5s ease-in-out infinite}.home-page .hero-art{animation:heroDrift 5s ease-in-out infinite}}
+@media(prefers-reduced-motion:reduce){.home-page .home-hero h1 .gradient-text,.home-page .hero-art,.home-page .project-card,.home-page .project-card .card-visual,.home-page .project-card:after{animation:none!important}}
